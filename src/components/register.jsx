@@ -55,7 +55,7 @@ const Register = () => {
                     <img src={Netflix_Logo} alt="Logo" class="img-fluid" style={{ height: "60px" }} />
                 </div>
             </nav>
-                
+
             <div className="container ">
                 <div className="row  d-flex justify-content-center align-items-center vh-100">
                     <div className="col-lg-4 md-6 xl-8 outline">
@@ -79,7 +79,7 @@ const Register = () => {
                             </div>
                             <button type="submit" class="btn btn-danger w-100 fw-bold" >Sign In</button>
                             {loading ? "Registering..." : "Register"}
-                            <p className="new mt-3">New to Netflix? <span className="text-white home-nav" onClick={() => navigate("/register")}>Sign up now</span></p>
+                            <p className="new mt-3">Already member? <span className="text-white home-nav" onClick={() => navigate("/register")}>Login</span></p>
                         </form>
                     </div>
                 </div>
