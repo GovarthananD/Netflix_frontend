@@ -37,7 +37,7 @@ const Register = () => {
             setError("");
 
             const response = await axios.post("https://netflix-backend-mwji.onrender.com/signup", user);
-            toast.success("Registration Successful!");
+            toast.success(response.data.message || "Registration Successful!");
             navigate("/sign");
 
         } catch (err) {
@@ -55,7 +55,7 @@ const Register = () => {
                     <img src={Netflix_Logo} alt="Logo" class="img-fluid" style={{ height: "60px" }} />
                 </div>
             </nav>
-
+                
             <div className="container ">
                 <div className="row  d-flex justify-content-center align-items-center vh-100">
                     <div className="col-lg-4 md-6 xl-8 outline">
